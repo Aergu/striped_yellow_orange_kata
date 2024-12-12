@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\joshua_aroka\\github_repository_projects\\katas\\striped_and_orange_belt\\striped_and_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj": {}
+    "C:\\Users\\LENOVO-2022\\Documents\\GitHub\\striped_yellow_orange_kata\\striped_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj": {}
   },
   "projects": {
-    "D:\\joshua_aroka\\github_repository_projects\\katas\\striped_and_orange_belt\\striped_and_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj": {
+    "C:\\Users\\LENOVO-2022\\Documents\\GitHub\\striped_yellow_orange_kata\\striped_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\joshua_aroka\\github_repository_projects\\katas\\striped_and_orange_belt\\striped_and_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO-2022\\Documents\\GitHub\\striped_yellow_orange_kata\\striped_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj",
         "projectName": "level1_striped_yellow_belt",
-        "projectPath": "D:\\joshua_aroka\\github_repository_projects\\katas\\striped_and_orange_belt\\striped_and_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj",
-        "packagesPath": "C:\\Users\\media\\.nuget\\packages\\",
-        "outputPath": "D:\\joshua_aroka\\github_repository_projects\\katas\\striped_and_orange_belt\\striped_and_orange_belt\\level1_striped_yellow_belt\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO-2022\\Documents\\GitHub\\striped_yellow_orange_kata\\striped_orange_belt\\level1_striped_yellow_belt\\level1_striped_yellow_belt.csproj",
+        "packagesPath": "C:\\Users\\LENOVO-2022\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO-2022\\Documents\\GitHub\\striped_yellow_orange_kata\\striped_orange_belt\\level1_striped_yellow_belt\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\media\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\LENOVO-2022\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\LENOVO-2022\\.dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

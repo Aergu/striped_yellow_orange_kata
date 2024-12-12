@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "level1_striped_yellow_belt/1.0.0": {
+        "runtime": {
+          "level1_striped_yellow_belt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "level1_striped_yellow_belt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
