@@ -4,8 +4,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Adding abilities to the container...");
-        AbilityContainer<string> abilityContainer = new AbilityContainer<string>();
-        Console.WriteLine(abilityContainer);
+       
+        var heal = new HealAbility();
+        var attack = new AttackAbility();
+        
+        var playerAbilities = new AbilityContainer<IAbility>();
+        
+        playerAbilities.AddAbility(heal);
+        playerAbilities.AddAbility(attack);
+        
+        Console.WriteLine("Executing all abilities:");
+        playerAbilities.ExecuteAllAbilities();
+        
+        playerAbilities.RemoveAbility(attack);
+        
+        Console.WriteLine("Executing remaining abilities:");
+        playerAbilities.ExecuteAllAbilities();
     }
 }

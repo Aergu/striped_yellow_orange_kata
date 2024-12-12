@@ -1,46 +1,52 @@
+using System.Security.Cryptography;
+
 namespace level2_striped_yellow_and_orange_belt;
 
-class PlayerCharacter
+public class PlayerCharacter
 {
-    public string name = "Joshua";
-    public int health = 2000;
-    public int damage = 10;
+    public string Name { get; set; }
+    public int Health { get; private set; }
 
-    public delegate void PlayerCharacterAction(int Attack);
+    // Event for health changes
+    public event Action<int> _healthChanged;
 
-    
-    public static void PrintToConsole(int Attack)
+    public PlayerCharacter(string name, int health)
     {
-        Console.WriteLine($"{Attack}");
+        Name = name;
+        Health = health;
     }
 
-    public delegate void HealthChangedEvent(int healthChanged);
-    public event HealthChangedEvent _healthChanged;
-    public void HealthCheck(int healthChanged)
+    public void TakeDamage(int damage)
     {
-        Console.WriteLine($"Enemy ambush!");
-        
-        _healthChanged?.Invoke(healthChanged);
-    }
+        Health -= damage;
+        if (Health < 0) Health = 0;
 
- 
+        Console.WriteLine($"{Name} took {damage} damage!");
+        _healthChanged?.Invoke(Health);
+    }
 }
 
-class EnemyCharacter
+public class EnemyCharacter
 {
-    public string name = "Dark Knight";
-    public int health = 3000;
-    public int damage = 8;
-    
-    public delegate void EnemyCharacterAction(int Attack);
+    public string Name { get; set; }
+    public int Health { get; private set; }
 
-    public delegate void HealthChangedEvent(int healthChanged);
-    public event HealthChangedEvent _healthChanged;
-    public void HealthCheck(int healthChanged)
+    // Event for health changes
+    public event Action<int> _healthChanged;
+
+    public EnemyCharacter(string name, int health)
     {
-        Console.WriteLine($"Enemy ambush!");
-        
-        _healthChanged?.Invoke(healthChanged);
+        Name = name;
+        Health = health;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health < 0) Health = 0;
+
+        Console.WriteLine($"{Name} took {damage} damage!");
+        _healthChanged?.Invoke(Health);
     }
 }
 
